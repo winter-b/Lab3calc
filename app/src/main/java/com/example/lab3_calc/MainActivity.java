@@ -152,9 +152,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonEqual:
                 if(!CurrentOperation.equals("")) {
                     String result = Calculate(PrevInput, textViewScreen.getText().toString(), CurrentOperation);
-                    ClearTextView();
-                    PrevInput = "";
-                    CurrentOperation = "";
+                    Clear();
                     AddAtTheEndOfTextView(result);
                 }
                 break;
