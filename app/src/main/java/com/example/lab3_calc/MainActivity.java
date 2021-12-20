@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return false;
     }
-    public String Calculate(String input1, String input2, String operation){
+    public static String Calculate(String input1, String input2, String operation){
         String result = "";
         double inputA;
         double inputB;
